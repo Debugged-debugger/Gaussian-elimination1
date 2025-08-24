@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
-//this algorithm was  made to perfom operations on matices using the gauss-jordan elimination.This will give you
+//testing to see new branch
+//this algorithm was  made to perform operations on matrices using the gauss-jordan elimination.This will give you
 //a solution to each augmented matrix entered ,it mimicks the gaussian elimination algorithm .
 
 int main(){
@@ -35,7 +35,7 @@ for(int i = 0;i<rows;i++)
 	for(int k = 0;k<cols;k++)
 	{
 		cout<<"Column "<<k +1<<": ";
-	   	cin >> matrice[i][k];
+		   	cin >> matrice[i][k];
 	
 		//cout<<" ";
 	}
@@ -51,7 +51,7 @@ for(int i = 0; i<rows;i++)
 {
 	for(int k= 0;k<cols;k++)
 	{
-		if(matrice[i][k]>0 || matrice<0)
+		if(matrice[i][k]>0 || matrice[i][k]<0)
 		{
 			zero = false;
 			
@@ -61,7 +61,7 @@ for(int i = 0; i<rows;i++)
 if(zero == true)
 {
 	cout<<"This is a zero matrix";
-	for(int i = 0;i<rows;i++)
+			for(int i = 0;i<cols;i++)
 	{
 		for(int k = 0;k<cols;k++)
 		{
